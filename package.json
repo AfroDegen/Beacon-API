@@ -1,5 +1,8 @@
 {
   "scripts": {
-    "test:observer": "tsx src/test-observer.ts"
+    "test:observer": "npx tsx src/test-observer.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5"
   }
 }
