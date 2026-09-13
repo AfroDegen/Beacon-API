@@ -19,6 +19,11 @@ jobs:
       - name: Install
         run: npm install
 
+      - name: Check tsx
+        run: |
+          npm list tsx
+          npx tsx --version
+
       - name: Run Observer
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
