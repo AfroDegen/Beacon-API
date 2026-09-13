@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "test:observer": "tsx src/test-observer.ts"
+  }
+}
