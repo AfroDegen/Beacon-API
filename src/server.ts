@@ -28,6 +28,16 @@ app.get("/health", (_, res) => {
 });
 
 /*
+ * Test Route
+ */
+app.get("/test", (_, res) => {
+  res.json({
+    success: true,
+    message: "Beacon API test route working."
+  });
+});
+
+/*
  * Beacon Audit Endpoint
  */
 app.post("/audit", async (req, res) => {
