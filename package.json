@@ -1,11 +1,9 @@
 {
   "name": "beacon-api",
   "version": "0.1.0",
-
   "scripts": {
     "test:observer": "npx tsx src/test-observer.ts"
   },
-
   "devDependencies": {
     "tsx": "^4.20.5"
   }
