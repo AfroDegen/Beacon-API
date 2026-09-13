@@ -1,10 +1,9 @@
 import { getObservation } from "./observer";
 
 async function run() {
-  const observation =
-    await getObservation(
-      "water damage restoration austin"
-    );
+  const observation = await getObservation(
+    "water damage restoration austin"
+  );
 
   console.log(
     JSON.stringify(
@@ -15,4 +14,7 @@ async function run() {
   );
 }
 
-run();
+run().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
