@@ -3,16 +3,10 @@
   "version": "0.1.0",
 
   "scripts": {
-    "test:observer": "tsx src/test-observer.ts"
-  },
-
-  "dependencies": {
-    "express": "^5.1.0",
-    "cors": "^2.8.5"
+    "test:observer": "npx tsx src/test-observer.ts"
   },
 
   "devDependencies": {
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2"
+    "tsx": "^4.20.5"
   }
 }
