@@ -16,27 +16,15 @@ jobs:
         with:
           node-version: 20
 
-      - name: Display Node Version
+      - name: Show package.json
         run: |
-          node --version
-          npm --version
+          echo "=== package.json ==="
+          cat package.json
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Debug package.json
-        run: |
-          echo "===== package.json ====="
-          cat package.json
-          echo "========================"
-
-      - name: Check Files
-        run: |
-          echo "===== Repository Files ====="
-          find . -type f
-          echo "============================"
-
-      - name: Verify tsx Installation
+      - name: Verify tsx
         run: |
           npm list tsx
           npx tsx --version
